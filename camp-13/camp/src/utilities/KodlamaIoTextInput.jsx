@@ -4,6 +4,7 @@ import { FormField, Label } from "semantic-ui-react";
 
 export default function KodlamaIoTextInput({ ...props }) {
   //   console.log(props);
+  //console.log(".")
 
   const [field, meta] = useField(props);
   
@@ -14,5 +15,6 @@ export default function KodlamaIoTextInput({ ...props }) {
         <Label pointing basic color="red" content={meta.error}></Label>
       ) : null}
     </FormField>
+  
   );
 }
